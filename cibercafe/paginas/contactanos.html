@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>C@FFE</title>
+<link href="twoColFixLtHdr.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../imagenes/taza_cafe.ico">
+<style>
+	#byby:hover {
+		background-color:white;
+	}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><!-- end .header --><img src="../imagenes/clean-gray-paper.png" width="254" height="173" /><font id="byby">By Edgar Regalado</font></div>
+  <div class="sidebar1">
+    <ul class="nav">
+    <li><a href="inicio.html"><img src="../imagenes/home.png" width="32" height="32" /> Inicio </a></li>
+      <li><a href="quienes_somos.html"><img src="../imagenes/pregunta.png" width="32" height="32" />¿Quiénes somos?</a></li>
+      <li><a href="precios.html"><img src="../imagenes/money_sing.png" width="32" height="32" />Precios</a></li>
+      <li><a href="contactanos.html"><img src="../imagenes/mail.png" width="32" height="32" />Contáctanos</a></li>
+      <li><a href="galeria.html"><img src="../imagenes/galeria.png" width="32" height="32" />Galería</a></li>
+    </ul>
+<img src="../imagenes/anuncio01.png" width="180" height="424" />    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1 class="titulo">CONTÁCTANOS</h1>
+    <h2>Formulario de contacto</h2>
+    <p>Si necesitas algún servicio o reparación en tu computadora de escritorio o laptop, ponte en contacto con nosotros a través del siguiente formulario.</p>
+    <form id="form1" name="form1" method="post" action="../datosformulario.php">
+      <table width="200" border="5" align="center" cellpadding="10" cellspacing="10">
+        <tr>
+          <td>Nombre</td>
+          <td><label for="campo_nombre"></label>
+          <input name="campo_nombre" type="text" id="campo_nombre" /></td>
+        </tr>
+        <tr>
+          <td align="center">Correo electrónico</td>
+          <td><label for="campo_correo"></label>
+          <input type="text" name="campo_correo" id="campo_correo" /></td>
+        </tr>
+        <tr>
+          <td>Fecha de registro</td>
+          <td><input name="fecha_registro" type="date" id="fecha_registro"/></td>
+        </tr>
+        <tr>
+          <td>Tipo de equipo</td>
+          <td><label for="campo_equipo"></label>
+            <select name="campo_equipo" id="campo_equipo">
+              <option value="1">Escritorio</option>
+              <option value="2">Laptop</option>
+              <option value="3">Tablet</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>Problema</td>
+          <td><label for="campo_problema"></label>
+          <textarea name="campo_problema" id="campo_problema" cols="45" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td>Requiere respaldo</td>
+          <td id="campo_respaldo"><input type="checkbox" name="campo_respaldo" id="campo_respaldo" />
+          <label for="campo_respaldo"></label></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>
+        <input name="enviar" type="submit" class="sidebar1" id="enviar" value="Enviar" />
+      </p>
+    </form>
+    <p>&nbsp;</p>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p><img src="../imagenes/blob.gif" alt="" width="50" height="50" align="absbottom" />Sitio creado por Edgar Regalado del grupo 601 </p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>
